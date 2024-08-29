@@ -1,0 +1,121 @@
+.contact{
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+    padding: 0 3rem 0 3rem;
+    margin-bottom: 20rem;
+}
+
+
+.c-right{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20rem;
+    gap: 1rem;
+}
+
+
+.c-right>input:nth-child(1), .c-right>input:nth-child(2){
+    padding: 10px 0px 10px 5px !important;
+    width: 25rem;
+    border: 3px solid var(--orange);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+.c-right>:nth-child(3){
+    /* padding: 10px 150px 2rem 5px !important; */
+    border: 3px solid var(--orange);
+    border-radius: 8px;
+    height: 11rem;
+}
+
+.c-right>input:nth-child(1), .c-right>input:nth-child(2), .c-right>:nth-child(3):focus{
+    outline: none;
+    box-shadow: none;
+    border:3px solid var(--orange);
+    /* color: var(--orange); */
+}
+
+.c-blur2{
+    position: absolute;
+    bottom: -10rem;
+    /* right: 100px; */
+    left: -100px;
+}
+
+
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.c-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Ubah flex direction ke column */
+        padding: 2rem 1rem; /* Sesuaikan padding */
+        height: auto; /* Sesuaikan tinggi menjadi otomatis */
+        margin-top: 20rem !important;
+    }
+
+    .contact>:nth-child(1)>:nth-child(1)>:nth-child(1){
+        font-size: 2rem;
+    }
+    .contact>:nth-child(1)>:nth-child(1)>:nth-child(2){
+        font-size: 2rem;
+    }
+
+    .c-left {
+        margin-bottom: 2rem; /* Tambahkan margin bawah untuk memberikan ruang antara elemen */
+        text-align: center; /* Tengah-kan teks */
+    }
+
+    .c-right {
+        left: 0; /* Reset posisi left */
+        width: 100%; /* Buat lebar 100% */
+        align-items: center; /* Pusatkan item secara horizontal */
+    }
+
+    .c-right > input:nth-child(1), .c-right > input:nth-child(2), .c-right > :nth-child(3) {
+        width: 100%; /* Buat input dan textarea mengisi lebar penuh */
+        max-width: 100%; /* Pastikan elemen tidak melebihi lebar kontainer */
+    }
+
+
+
+    .c-right > .c-button {
+        width: 100%; /* Buat tombol mengisi lebar penuh */
+        max-width: 100%; /* Pastikan tombol tidak melebihi lebar kontainer */
+    }
+
+    .c-blur2 {
+        display: none; /* Sembunyikan elemen blur untuk menghindari overlapping */
+    }
+}
+
+
+

@@ -1,0 +1,35 @@
+.card{
+    width: 10rem;
+    height: 13rem;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    padding: 0px 26px 2rem 26px;
+    border-radius: 30px;
+}
+
+.card>:nth-child(1){
+  width: 100px;  
+  margin: auto;
+}
+
+.card>:nth-child(2){
+    font-weight: bold;
+}
+
+.card>:nth-child(3){
+    /* font-weight: bold; */
+    font-size: medium;
+    color: var(--gray);
+    font-weight: bold;
+}
+
+
+
+
+
